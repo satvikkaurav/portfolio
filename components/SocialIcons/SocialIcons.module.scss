@@ -1,0 +1,28 @@
+@import '../../styles/config';
+
+
+
+.social{
+    height: 5vh;
+    width: 20vw;
+    display: flex;
+    position: absolute;
+    left: 30vw;
+    bottom: 0;
+    list-style-type: none;
+    flex-direction: row;
+    grid-gap: 10%;
+    font-size: 30px;
+    
+    align-items: center;
+    color: white;
+
+    li{
+    transition : all 0.2s ease-in-out;
+
+    &:hover{
+        color: $color-2;
+        transform: translateY(-8px);
+    }
+}
+}

@@ -1,0 +1,18 @@
+$color-1:white;
+$color-2:rgb(1, 255, 1);
+$color-3:rgb(255, 102, 0);
+
+
+
+@mixin media-md {
+    @media (min-width : 1000px) {
+        @content;
+    }
+}
+
+@mixin media-Lg{
+    @media (min-width : 1250px) {
+        @content;
+    }
+}
+
