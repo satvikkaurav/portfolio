@@ -27,16 +27,16 @@ function Nav(){
                     <Link href="/" className={!showMenu ? styles.menu_nav__link : `${styles.menu_nav__link} ${styles.open}`}>Home</Link>
                 </li>
                 <li className={!showMenu ? styles.menu_nav__item:`${styles.menu_nav__item} ${styles.open}`}>
-                    <Link href="/" className={!showMenu ? styles.menu_nav__link : `${styles.menu_nav__link} ${styles.open}`}>About Me</Link>
+                    <Link href="/aboutme" className={!showMenu ? styles.menu_nav__link : `${styles.menu_nav__link} ${styles.open}`}>About Me</Link>
                 </li>
                 <li className={!showMenu ? styles.menu_nav__item:`${styles.menu_nav__item} ${styles.open}`}>
-                    <Link href="/" className={!showMenu ? styles.menu_nav__link : `${styles.menu_nav__link} ${styles.open}`}>Skills</Link>
+                    <Link href="/skills" className={!showMenu ? styles.menu_nav__link : `${styles.menu_nav__link} ${styles.open}`}>Skills</Link>
                 </li>
                 <li className={!showMenu ? styles.menu_nav__item:`${styles.menu_nav__item} ${styles.open}`}>
-                    <Link href="/" className={!showMenu ? styles.menu_nav__link : `${styles.menu_nav__link} ${styles.open}`}>Projects</Link>
+                    <Link href="/projects" className={!showMenu ? styles.menu_nav__link : `${styles.menu_nav__link} ${styles.open}`}>Projects</Link>
                 </li>
                 <li className={!showMenu ? styles.menu_nav__item:`${styles.menu_nav__item} ${styles.open}`}>
-                    <Link href="/" className={!showMenu ? styles.menu_nav__link : `${styles.menu_nav__link} ${styles.open}`}>Contact Me</Link>
+                    <Link href="/contact" className={!showMenu ? styles.menu_nav__link : `${styles.menu_nav__link} ${styles.open}`}>Contact Me</Link>
                 </li>
                 
                 

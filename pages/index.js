@@ -1,18 +1,24 @@
-import Image from 'next/image';
 import styles from '../styles/Home.module.scss';
 import Nav from "../components/Nav";
-import SocialIcons from '../components/SocialIcons';
-
+import Footer from '../components/Footer'
+import Background from '../components/Background'
 export default function Home() {
   return (
     <>
     <div className={styles.main}>
-      <Image src="/../public/images/back_2.jpg" alt='Background Image' layout='fill'  />
-    </div>
-    
     <Nav />
+
+      <div className = {styles.main__intro}>
+        <span className={styles.hello}>Hi ! I am Satvik Kaurav</span>
+        <span className={styles.web}>Website Developer || Linux Enthusiast</span>
+      </div>
+
+    </div>
+    <Background />
     
-    <SocialIcons />
+    
+    
+    <Footer />
     </>
   )
 }
