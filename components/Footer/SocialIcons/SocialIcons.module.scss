@@ -3,20 +3,28 @@
 
 
 .social{
+    
+
     height: 5vh;
     width: 20vw;
     display: flex;
     position: absolute;
-    right: 2rem;
     bottom: 0;
     list-style-type: none;
     flex-direction: row;
     grid-gap: 10%;
     font-size: 30px;
     
-    align-items: center;
+    // align-items: center;
     color: white;
 
+    @include media-vsm {
+        right: 10rem;
+    }
+    @media (min-width:500px) {
+        right: 8rem;
+    }
+    
     li{
     transition : all 0.2s ease-in-out;
 

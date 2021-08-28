@@ -5,13 +5,28 @@ $color-3:rgb(255, 102, 0);
 
 
 @mixin media-md {
-    @media (min-width : 1000px) {
+    @media (min-width : 900px) {
         @content;
     }
 }
 
-@mixin media-Lg{
+@mixin media-lg{
     @media (min-width : 1250px) {
+        @content;
+    }
+}
+@mixin media-sm{
+    @media (min-width : 500px) {
+        @content;
+    }
+}
+@mixin media-vsm{
+    @media (min-width : 300px) {
+        @content;
+    }
+}
+@mixin media-vlg{
+    @media (min-width : 1600px) {
         @content;
     }
 }
