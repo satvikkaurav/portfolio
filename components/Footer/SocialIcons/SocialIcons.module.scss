@@ -17,11 +17,16 @@
     color: white;
 
     @include media-vsm {
-        right: 14rem;
+        right: 50vw;
     }
-    @media (min-width:500px) {
-        right: 8rem;
+    @include media-sm{
+        right: 45vw;
     }
+    @include media-md{
+        right: 40vw;
+    }
+    
+    
     
     li{
     transition : all 0.2s ease-in-out;
