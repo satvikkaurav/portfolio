@@ -2,7 +2,6 @@ import styles from '../styles/Home.module.scss';
 import Nav from "../components/Nav";
 import Footer from '../components/Footer'
 import Background from '../components/Background'
-import Buttons from '../components/Buttons';
 
 import Head from 'next/head'
 
@@ -23,7 +22,6 @@ export default function Home() {
         
         <span className={styles.hello}>Hi ! I am Satvik Kaurav</span>
         <span className={styles.web}>Website Developer || Linux Enthusiast</span>
-        {/* <Buttons buttonSize="btn__medium" buttonStyle="btn__outline">Connect to me</Buttons> */}
         </div>
     </div>
     
