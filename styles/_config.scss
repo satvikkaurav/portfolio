@@ -16,7 +16,7 @@ $color-3:rgb(255, 102, 0);
     }
 }
 @mixin media-sm{
-    @media (min-width : 500px) {
+    @media (min-width : 600px) {
         @content;
     }
 }
