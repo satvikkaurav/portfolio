@@ -2,9 +2,16 @@ import styles from '../styles/Home.module.scss';
 import Nav from "../components/Nav";
 import Footer from '../components/Footer'
 import Background from '../components/Background'
+
+import Head from 'next/head'
+
 export default function Home() {
   return (
     <>
+    <Head>
+        <title>Satvik Kaurav</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    </Head>
     <div className={styles.main}>
     <Nav />
 
