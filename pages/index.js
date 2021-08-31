@@ -3,6 +3,7 @@ import Nav from "../components/Nav";
 import Footer from "../components/Footer";
 import Background from "../components/Background";
 import { Button } from "../components/Buttons";
+import Link from 'next/link'
 
 import Head from "next/head";
 
@@ -13,16 +14,31 @@ export default function Home() {
         <title>Satvik Kaurav</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-      <Nav />
+      
 
       <div className={styles.main}>
+        <div className={styles.home_nav}>
+          <Link href="/aboutme">
+          <li className={styles.aboutme}>About Me</li>
+          </Link>
+          <Link href="/blog">
+          <li className={styles.blog}>Blog</li>
+          </Link>
+          <Link href = "/projects">
+          <li className={styles.projects}>Projects</li>
+          </Link>
+        </div>
         <Background />
 
         <div className={styles.main__intro}>
-          <span className={styles.hello}>Hi ! I am Satvik Kaurav</span>
-          <span className={styles.web}>
-            Website Developer || Linux Enthusiast
-          </span>
+          <div className={styles.avatar}>
+            
+            {/* <Image  src="/../public/images/avatar.jpg" alt="avatar" layout='fill'/> */}
+          
+          </div>
+
+          <span className={styles.hello}>Satvik Kaurav</span>
+          
           <div className = {styles.buttons}>
           <span>
             <Button buttonStyle= "btn__outline" buttonSize="btn__medium">My Resume</Button>
