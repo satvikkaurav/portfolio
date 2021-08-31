@@ -1,0 +1,53 @@
+ @import '../../styles/config';
+ 
+
+  
+  .btn {
+    padding: 8px 20px;
+    border-radius: 2px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+  
+  
+  &__primary {
+    background-color: $color-1;
+    color: #242424;
+    border: 5px solid white;
+    border-radius: 10px;
+    font-weight: 500;
+    transition: all 0.3s ease-out;
+    &:hover{
+      background: transparent;
+      color: $color-1;
+    }
+  }
+  
+  &__outline {
+    background-color: transparent;
+    font-size: 20px;
+    border: solid white 5px;
+    border-radius: 10px;
+    color: white;
+    &:hover{
+      background-color: white;
+      color: $color-4;
+    }
+  }
+  
+  &__medium {
+    padding: 8px 20px;
+    font-size: 20px;
+    transition: all 0.3s ease-out;
+  
+  }
+  
+    &__large {
+    padding: 12px 26px;
+    font-size: 20px;
+    font-weight: 600;
+    
+  }
+  
+}
+  

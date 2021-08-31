@@ -4,9 +4,16 @@ import Background from '../components/Background';
 function Aboutme(){
     return(
         <>
+        <div className = "about">
         <Nav/>
         <Background/>
+
+
+
         <Footer/>
+
+
+        </div>
         </>
     )
 }
