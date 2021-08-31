@@ -17,10 +17,11 @@
     color: white;
 
     @include media-vsm {
-        right: 55vw;
+        right: 60vw;
+        grid-gap: 20px;
     }
     @include media-sm{
-        right: 45vw;
+        right: 53vw;
     }
     @include media-md{
         right: 40vw;
