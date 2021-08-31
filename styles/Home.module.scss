@@ -1,56 +1,88 @@
-@import 'config';
+@import "config";
 
-.main{
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  &__intro {
+    cursor: default;
+    backdrop-filter: blur(5px);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    width: 100vw;
-    &__intro{
-        cursor: default;
-        backdrop-filter: blur(5px);
-        display : flex;
-        flex-direction : column;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
-        z-index: 1;
-        font-weight: 700;
-        grid-gap: 20px;
-        border: white solid 2px;
-        padding: 5px 5px 5px 5px;
-        border-radius: 10px;
+    position: absolute;
+    z-index: 1;
+    font-weight: 700;
+    grid-gap: 20px;
+    border: white solid 2px;
+    padding: 5px 5px 5px 5px;
+    border-radius: 10px;
 
-        .hello{
-            color:rgb(255, 255, 255);
-            font-size: 50px;
-            text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em blue;
-            
-            @include media-vsm{
-                font-size: 30px;
-            }
-            @include media-sm{
-                font-size: 50px;
-            }
-        
-        }
-        .web{
-            color: $color-3;
-            
-            text-shadow: 1px 1px 2px black, 0 0 1em rgb(62, 62, 158), 0 0 0.2em blue;
-            
-            @include media-vsm{
-                font-size: 20px;
-            }
-            @include media-sm{
-                font-size: 30px;
-            }
-        
-        }
-        .buttons{
-            span{
-                margin:5px 15px 5px 15px
-            }
-        }
+    @include media-sm {
     }
+    @include media-lg {
+      height: 60vh;
+      width: 60vw;
+    }
+    .avatar{
+      background-image: url('../public/images/avatar.jpg');
+      
+      border-radius: 50%;
+      z-index: 100;
+      background-position: center;
+      background-size: 80%;
+
+      @include media-vsm{
+        height: 200px;
+        width: 200px;
+      }
+      
+    }
+
+    .hello {
+      color: rgb(255, 255, 255);
+      font-size: 50px;
+      text-shadow: 1px 1px 2px black, 0 0 1em rgb(0, 0, 0), 0 0 0.2em rgb(0, 0, 3);
+
+      @include media-vsm {
+        font-size: 30px;
+      }
+      @include media-sm {
+        font-size: 50px;
+      }
+    }
+    
+    .buttons {
+      span {
+        margin: 5px 15px 5px 15px;
+      }
+    }
+  }
+  .home_nav {
+    position: absolute;
+    top: 5vh;
+    justify-content: center;
+    text-align: center;
+    height: 5%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    grid-gap: 20px;
+    
+    color: white;
+    z-index: 50;
+    list-style-type: none;
+    li{
+      cursor: pointer;
+      transition: transform 0.2s ease-in;
+      &:hover{
+        color: $color-2;
+        border-bottom: solid 5px;
+        transform: translateY(-3px);
+      }
+    }
+  }
 }
