@@ -3,28 +3,27 @@
 
 
 .social{
-    height: 5vh;
-    width: 20vw;
+    height: 3vh;
+    width: 97vw;
     display: flex;
     position: absolute;
-    bottom: 0;
-    list-style-type: none;
     flex-direction: row;
-    grid-gap: 10%;
-    font-size: 30px;
+    bottom: 0;
+    justify-content: center;
+    text-align: center;
+    list-style-type: none;
+    font-size: 40px;
     
-    // align-items: center;
     color: white;
 
     @include media-vsm {
-        right: 60vw;
-        grid-gap: 20px;
+        grid-gap: 15px;
     }
     @include media-sm{
-        right: 53vw;
+        grid-gap: 20px;
     }
     @include media-md{
-        right: 40vw;
+        grid-gap: 25px;
     }
     
     
@@ -34,7 +33,7 @@
 
     &:hover{
         color: $color-2;
-        transform: translateY(-8px);
+        transform: translateY(-5px);
     }
 }
 }

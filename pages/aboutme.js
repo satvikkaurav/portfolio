@@ -12,9 +12,9 @@ function Aboutme() {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <Nav />
+      <Footer />
 
       <div className={styles.main}>
-        <Footer />
         <div className={styles.aboutme}>
           <div className={styles.aboutme__head}>
             <div className={styles.avatar}></div>
@@ -60,7 +60,7 @@ function Aboutme() {
               <li>I also loves to play basketball in my free time. I have played JNV regional level Basketball Tournament representing Jabalpur Cluster</li>
               <li>I loves to listen music and I usually sing lot of songs in my free time or whenever I am tired</li>
               <li>Reading Novels</li>
-              <li>Watching Movies, web series and Anime</li>
+              <li>Watching Movies, Web Series and Anime</li>
             </ul>
           </ul>
         </div>
