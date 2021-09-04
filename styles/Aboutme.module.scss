@@ -1,0 +1,89 @@
+@import "config";
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  
+  background :
+    url('/images/back_2.jpg');
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+  .aboutme {
+    cursor: default;
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    border: white solid 2px;
+    
+    border-radius: 10px;
+    height: 70vh;
+    width: 70vw;
+    overflow-y: scroll;
+
+    &__head {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      
+      height: 50%;
+      width: 95%;
+      text-align: center;
+      padding-top: 10px;
+      padding-left: 20px;
+
+      .avatar {
+        background-image: url("../public/images/avatar.jpg");
+        
+        border-radius: 50%;
+        z-index: 100;
+        background-position: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        
+        @include media-vsm {
+          height: 150px;
+          width: 150px;
+        }
+        @include media-sm {
+          height: 160px;
+          width: 160px;
+        }
+        @include media-md {
+          height: 200px;
+          width: 200px;
+          top: 10%;
+        }
+
+      }
+      .hello {
+        
+        color: rgb(255, 255, 255);
+        font-size: 40px;
+        text-shadow: 1px 1px 2px black, 0 0 1em rgb(0, 0, 0),
+          0 0 0.2em rgb(0, 0, 3);
+  
+        @include media-vsm {
+          font-size: 20px;
+        }
+        @include media-sm {
+          font-size: 30px;
+        }
+        @include media-md {
+          font-size: 40px;
+        }
+      }
+    }
+
+    &__content{
+      color: $color-1;
+      height: 50%;
+      width: 100%;
+    }
+  }
+}
