@@ -47,6 +47,12 @@ function Aboutme() {
                   <li>BackEnd :</li>
                 </ul>
               </li>
+              <li>Linux
+                <ul>
+                  <li>Manjaro Linux User</li>
+                  <li>Know Basic Commands of linux terminal</li>
+                </ul>
+              </li>
             </ul>
             <li>My Hobbies are : </li>
             <ul>
